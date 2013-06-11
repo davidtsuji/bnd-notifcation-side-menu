@@ -1,0 +1,1 @@
+require('bnd-notification-side-menu');

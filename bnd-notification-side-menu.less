@@ -1,0 +1,66 @@
+html {
+
+	>body {
+		
+		@width: 300px;
+		@transition-speed: .3s;
+		@transition-ease: cubic-bezier(0.19, 1, 0.22, 1);
+
+		.transition(@transition) {
+			-webkit-transition: @transition;
+			-moz-transition: @transition;
+			-o-transition: @transition;
+			transition: @transition;
+		}
+
+		&.bnd-notification-side-menu-show {
+
+			margin-right: @width;
+			margin-left: -@width;
+			overflow: hidden;
+
+		}
+
+		.transition(~"margin-right @{transition-speed} @{transition-ease}, margin-left @{transition-speed} @{transition-ease}");
+
+		.bnd-notification-side-menu {
+
+			position: fixed;
+			top: 0px;
+			right: -@width;
+			bottom: 0px;
+			width: @width;
+			overflow-x: hidden;
+			.transition(~"right @{transition-speed} @{transition-ease}");
+
+			&.show {
+
+				right: 0px;
+
+				>div.bnd-notification-side-menu-inner {
+
+					left: 0px;
+					right: 0px;
+
+				}
+
+			}
+
+			>div.bnd-notification-side-menu-inner {
+
+				position: absolute;
+				top: 0px;
+				right: @width;
+				bottom: 0px;
+				left: -@width;
+				overflow-x: hidden;
+
+				.transition(~"left @{transition-speed} @{transition-ease}, right @{transition-speed} @{transition-ease}");
+
+			}
+
+		}
+	
+	}
+
+}

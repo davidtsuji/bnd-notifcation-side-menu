@@ -1,0 +1,37 @@
+html, body {
+	
+	position: relative;
+	height: 100%;
+
+}
+
+body > div.wrapper {
+
+	padding: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url(http://subtlepatterns.com/patterns/fabric_of_squares_gray.png);
+
+}
+
+.bnd-notification-side-menu >.bnd-notification-side-menu-inner {
+
+	background-image: url(http://subtlepatterns.com/patterns/grey_wash_wall.png);
+
+}
+
+.bnd-notification-side-menu >.bnd-notification-side-menu-inner:after {
+
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -20px;
+	width: 20px;
+	background-color: red;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+
+}

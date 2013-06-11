@@ -1,0 +1,42 @@
+html > body {
+  -webkit-transition: margin-right 0.3s cubic-bezier(0.19, 1, 0.22, 1), margin-left 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: margin-right 0.3s cubic-bezier(0.19, 1, 0.22, 1), margin-left 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: margin-right 0.3s cubic-bezier(0.19, 1, 0.22, 1), margin-left 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: margin-right 0.3s cubic-bezier(0.19, 1, 0.22, 1), margin-left 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+html > body.bnd-notification-side-menu-show {
+  margin-right: 300px;
+  margin-left: -300px;
+  overflow: hidden;
+}
+html > body .bnd-notification-side-menu {
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  bottom: 0px;
+  width: 300px;
+  overflow-x: hidden;
+  -webkit-transition: right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+html > body .bnd-notification-side-menu.show {
+  right: 0px;
+}
+html > body .bnd-notification-side-menu.show > div.bnd-notification-side-menu-inner {
+  left: 0px;
+  right: 0px;
+}
+html > body .bnd-notification-side-menu > div.bnd-notification-side-menu-inner {
+  position: absolute;
+  top: 0px;
+  right: 300px;
+  bottom: 0px;
+  left: -300px;
+  overflow-x: hidden;
+  -webkit-transition: left 0.3s cubic-bezier(0.19, 1, 0.22, 1), right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: left 0.3s cubic-bezier(0.19, 1, 0.22, 1), right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: left 0.3s cubic-bezier(0.19, 1, 0.22, 1), right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: left 0.3s cubic-bezier(0.19, 1, 0.22, 1), right 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}

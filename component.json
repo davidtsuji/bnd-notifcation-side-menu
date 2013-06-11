@@ -1,0 +1,22 @@
+{
+  "name": "bnd-notification-side-menu",
+  "repo": "davidtsuji/bnd-notification-side-menu",
+  "description": "Dashboard side menu",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+
+    "component/jquery": "*",
+    "davidtsuji/angular-component": "*"
+
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "bnd-notification-side-menu.css"
+  ]
+}
