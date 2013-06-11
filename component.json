@@ -6,9 +6,7 @@
   "keywords": [],
   "dependencies": {
 
-    "component/jquery": "*",
-    "davidtsuji/angular-component": "*"
-
+    "component/jquery": "*"
   },
   "development": {},
   "license": "MIT",
