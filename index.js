@@ -48,7 +48,6 @@ $(function(){
 
 		if ($(_event.target).closest('.bnd-notification-side-menu').length == 0) {
 
-			//_event.stopImmediatePropagation();
 			_event.preventDefault();
 			hide();
 
